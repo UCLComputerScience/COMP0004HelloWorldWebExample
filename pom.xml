@@ -6,7 +6,7 @@
 
   <artifactId>HelloWorld</artifactId>
 
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
 
   <packaging>war</packaging>
 
@@ -17,7 +17,7 @@
   <properties>
     <tomcat.version>9.0.45</tomcat.version>
     <jsp.version>4.0.1</jsp.version>
-    <java.version>17</java.version>
+    <java.version>19</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <main.class>ucl.ac.uk.main.Main</main.class>
@@ -32,7 +32,7 @@
         <version>3.3.2</version>
         <configuration>
           <outputDirectory>${basedir}/war-file/</outputDirectory>
-          <warName>HelloWorld-1.0-SNAPSHOT</warName>
+          <warName>HelloWorld-1.1-SNAPSHOT</warName>
         </configuration>
       </plugin>
       <plugin>
@@ -86,7 +86,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>1.6.0</version>
+        <version>3.1.0</version>
         <executions>
           <execution>
             <goals>
@@ -101,7 +101,7 @@
             <classpath />
             <argument>${main.class}</argument>
           </arguments>
-          <workingDirectory>${project}</workingDirectory>
+          <workingDirectory>${project.basedir}</workingDirectory>
         </configuration>
       </plugin>
     </plugins>
