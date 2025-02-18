@@ -3,8 +3,8 @@ package ucl.ac.uk.servlets;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
 
 @WebServlet("/helloworldservlet.html")
 public class HelloWorldServlet extends HttpServlet
