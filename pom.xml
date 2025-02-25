@@ -6,7 +6,7 @@
 
   <artifactId>HelloWorld</artifactId>
 
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2</version>
 
   <packaging>war</packaging>
 
@@ -15,7 +15,6 @@
   <url>http://localhost:8080</url>
 
   <properties>
-<!--    <tomcat.version>9.0.45</tomcat.version>-->
     <tomcat.version>11.0.4</tomcat.version>
     <jsp.version>4.0.1</jsp.version>
     <java.version>23</java.version>
