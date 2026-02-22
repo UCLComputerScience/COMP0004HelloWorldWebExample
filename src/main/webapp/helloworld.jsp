@@ -9,12 +9,14 @@
   <h1>Hello from the Java Server Page!</h1>
   <%
     String message = "This is a message in a Java String";
-    Date date = new Date();
-    SimpleDateFormat formatter = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+    var now = java.time.ZonedDateTime.now();
+    var formatter = java.time.format.DateTimeFormatter.
+      ofLocalizedDateTime(java.time.format.FormatStyle.MEDIUM).
+      withLocale(request.getLocale());
   %>
   <p><%=message%></p>
   <hr>
-  <p>Today's date is: <%=formatter.format(date)%></p>
+  <p>Today's date is: <%=formatter.format(now)%></p>
   <hr>
   <a href='index.html'>Back to the default index.html</a>
 </body>
